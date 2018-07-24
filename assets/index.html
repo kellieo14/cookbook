@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-Do List</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script type="text/javascript" src="js/lib/jquery-3.1.1min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		
+
+		<div class="titles">
+
+		<div class="row page-title">
+			<div class="col-md-12">
+				<h2 class="title rec-title">Recipes</h2>
+			</div>
+		</div>
+		<div class="breakfast-div">
+		<div class="row">
+			<div class="col-md-12 bfast-img">
+				<h3 class="title breakfast-title">Breakfast</h3>
+			</div>
+		</div>
+		<div class="row breakfast-toggle">
+			<div class="col-lg-6 col-sm-12 add-new-recipe">
+				<h5>Add new recipe</h5>
+			</div>
+			<div class="col-lg-6 col-sm-12 view-all-recipes">
+				<h5>View all recipes</h5>
+			</div>
+		</div>
+	</div>
+		<br>
+		<div class="dinner-div">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="title dinner-title">Dinner</h3>
+			</div>
+		</div>
+		<div class="row dinner-toggle">
+			<div class="col-lg-6 col-sm-12 add-new-recipe">
+				<h5>Add new recipe</h5>
+			</div>
+			<div class="col-lg-6 col-sm-12 view-all-recipes">
+				<h5>View all recipes</h5>
+			</div>
+		</div>
+	</div>
+		<br>
+		<div class="dessert-div">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="title dessert-title">Desserts</h3>
+			</div>
+		</div>
+		<div class="row dessert-toggle">
+			<div class="col-lg-6 col-sm-12 add-new-recipe">
+				<h5>Add new recipe</h5>
+			</div>
+			<div class="col-lg-6 col-sm-12 view-all-recipes">
+				<h5>View all recipes</h5>
+			</div>
+		</div>
+	</div>
+		<br>
+
+		<div class="row shopping-convert">
+			<div class="col-xs-6 cart-split">
+				<i class="fa fa-shopping-cart shopping-list-display"></i>
+			</div>
+			<div class="col-xs-6 converter-split">
+				<i class="fa fa-balance-scale converter-display"></i>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- New Recipe -->
+	<div class="hide">
+		<div class="row">
+			<div class="col-lg-12">
+				<i class= "fa fa-window-minimize main-cat"></i>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12-8">
+				<h1 class="new-recipe">New Recipe</h1>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col-md-12">
+					<input class="recipe-title" type="text" required placeholder="RECIPE NAME">
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<input class="author" type="text" required placeholder="Recipe From">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+						<h4 class="ingredient-category">Ingredients</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<input class="ingredient" type="text" placeholder="Add New Ingredient">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="ingredient">
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="recipe-category">Directions</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<input class="direction-title" type="text" placeholder="Add New Step">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+							<ul class="direction">
+							</ul>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="additional-note">Additional Notes:</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<input class="note-input" type="text" placeholder="Add A Note">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+							<ul class="note">
+							</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1 category">
+					<h4>Category: </h4>
+				</div>
+				<div class="col-xs-11">
+					<select name="category" id="category">
+						<option value="breakfast">Breakfast</option>
+						<option value="dinner">Dinner</option>
+						<option value="dessert">Dessert</option>
+					</select>
+				</div>
+			</div>
+			<div class="row save-exit">
+				<div class="col-xs-6 save-row">
+					<button class="save">SAVE</button>
+				</div>
+				<div class="col-xs-6 exit-row">
+					<button class="exit">EXIT</button>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Shopping List -->
+		<div class="row convert-shop-row">
+			<div class="col-md-6 col-xs-12">
+				<div class="hide-all-shopping">
+					<div class="col-xs-12 shop-min">
+				<i class= "fa fa-window-minimize shop-list"></i>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="shopping-cart">
+								<h1 class="shopping">Shopping List</h1>
+									<input class="list-item" type="text" placeholder="Add New Item">
+									<ul class="list">
+									</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!--Converter-->
+		<div class="col-md-6 col-xs-12">
+			<div class="hide-all-conversion">
+				<div class="row min-right">
+					<div class="col-xs-12">
+						<i class= "fa fa-window-minimize converter"></i>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class= "conversion">
+							<h1 class="convertTitle">Convert Units</h1>
+						</div>
+					</div>
+				</div>
+				<div class="center">
+				<div class="row">
+					<div class="col-lg-3">
+						<input type="number" class="fromInput" placeholder="AMOUNT" min = 0>
+					</div>
+
+			
+					
+					
+					<div class=" col-lg-3">
+						<select name="convert" id="fromUnit">
+							<option value="cup">Cups</option>
+							<option value="gram">Grams</option>
+							<option value="ml">Milliliters</option>
+							<option value="ounce">Ounces</option>
+							<option value="pint">Pints</option>
+							<option value ="tsp">Teaspoons</option>
+						</select>
+					</div>
+			
+		
+					<div class="col-lg-3">
+						<select name="convert" id="toUnit">
+							<option value="cup">Cups</option>
+							<option value="gram">Grams</option>
+							<option value="ml">Milliliters</option>
+							<option value="ounce">Ounces</option>
+							<option value="pint">Pints</option>
+							<option value ="tsp">Teaspoons</option>
+						</select>
+					</div>
+					<div class="col-lg-3">
+  						<button id="convertButton">Convert</button>
+  					</div>
+
+
+				</div>
+
+					
+				</div>
+			 	 <div class="row">
+  					<div class="col-lg-12">
+ 	 					<h5 class="returnValue"></h5>
+ 	 				</div>
+ 	 			</div>
+
+ 	 		
+			</div>	
+		</div>
+	<!-- </div> -->
+	</div>
+</div>
+
+
+
+
+	<script type="text/javascript" src="js/toDoList.js"></script>
+	<script src="js/js.cookie.js"></script>
+</body>
+</html>
